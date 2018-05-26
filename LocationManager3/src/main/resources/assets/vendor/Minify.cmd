@@ -1,0 +1,14 @@
+uglifyjs --compress --mangle -- angular-animate.js          > angular-animate.min.js
+uglifyjs --compress --mangle -- angular-block-ui.js         > angular-block-ui.min.js
+uglifyjs --compress --mangle -- angular-confirm.js          > angular-confirm.min.js
+uglifyjs --compress --mangle -- angular-messages.js         > angular-messages.min.js
+uglifyjs --compress --mangle -- angular-mocks.js            > angular-mocks.min.js
+uglifyjs --compress --mangle -- angular-recaptcha.js        > angular-recaptcha.min.js
+uglifyjs --compress --mangle -- angular-resource.js         > angular-resource.min.js
+uglifyjs --compress --mangle -- angular-sanitize.js         > angular-sanitize.min.js
+uglifyjs --compress --mangle -- angular-toastr.js           > angular-toastr.min.js
+uglifyjs --compress --mangle -- angular-toastr.tpls.js      > angular-toastr.tpls.min.js
+uglifyjs --compress --mangle -- angular-ui-router.js        > angular-ui-router.min.js
+uglifyjs --compress --mangle -- angular.js                  > angular.min.js
+uglifyjs --compress --mangle -- jquery.freezeHeader.js      > jquery.freezeHeader.min.js
+uglifyjs --compress --mangle -- satellizer.js               > satellizer.min.js

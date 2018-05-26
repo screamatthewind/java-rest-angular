@@ -1,0 +1,64 @@
+# Database settings.
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: db_user
+  password: password
+  url: jdbc:mysql://localhost:3306/secureacall_db
+
+
+server:
+  adminMinThreads: 1
+  adminMaxThreads: 64
+  adminContextPath: /
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 8080
+#    - type: https
+#      port: 8443
+#      keyStorePath: ./keystore.jks
+#      keyStorePassword: password
+#      trustStorePath: .\cacerts
+#      certAlias: selfsigned
+#      validateCerts: false
+
+#  adminConnectors:
+#    - type: http
+#      port: 8081
+#    - type: https
+#      port: 8444
+#      keyStorePath: ./keystore.jks
+#      keyStorePassword: password
+#      trustStorePath: .\cacerts
+#      certAlias: selfsigned
+#      validateCerts: false
+
+# Logging settings.
+logging:
+  level: INFO
+
+  loggers:
+    com.screamatthewind: ALL
+    org.hibernate.SQL: ALL
+    io.dropwizard: ALL
+
+  appenders:
+    - type: console
+      threshold: INFO
+
+    - type: file
+      currentLogFilename: myapplication.log
+      threshold: WARN
+      archive: true
+      archivedLogFilenamePattern: myapplication-%d.log
+      archivedFileCount: 5
+      timeZone: UTC 
+
+clientSecrets:
+    facebook: 123
+    google: abc
+    linkedin: Linkedin Client Secret
+    github: Github Client Secret
+    foursquare: Foursquare Secret
+    twitter: 456
+    
